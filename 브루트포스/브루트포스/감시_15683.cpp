@@ -12,12 +12,12 @@
 
 using namespace std;
 
-int map[8][8], cctv[8], dirct[8];
+int map[8][8], dirct[8];//입력으로 들어오는 맵 전체, 맵 전체 cctv의 방향을 저장
 int n, m, cnt=0;
 int dx[4] = {0, 1, 0, -1};
 int dy[4] = {1, 0, -1, 0};
 
-void print(int map2[8][8]){
+void print(int map2[8][8]){ //디버깅시 맵 전체 확인하기 위한 함수
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             cout << setw(2) << map2[i][j];
@@ -28,28 +28,24 @@ void print(int map2[8][8]){
 }
     
 
-int check(int map2[8][8], int f){
+int check(int map2[8][8]){//맵이 인수로 왔을 때 cctv 방향 배열과 대조해서 맵을 변경시키고 답을 찾는 함수
     int ans = 0, index=0;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){//맵에 cctv 찾기
         for(int j=0; j<m; j++){
             int x=i+dx[dirct[index]], y=j+dy[dirct[index]];
-            if(map2[i][j] == 1){
-                while(x>=0 && x<n && y>=0 && y<m){
-//                    if(x == 1 && y == 0)
-//                        printf("1\n");
-                    if(map2[x][y] == 6)
+            if(map2[i][j] == 1){//cctv가 1일 경우
+                while(x>=0 && x<n && y>=0 && y<m){//cctv가 볼 수 있는 곳 까지 -1로 변경
+                    if(map2[x][y] == 6)//벽을 만났을 때는 break
                         break;
-                    if(map2[x][y] == 0)
+                    if(map2[x][y] == 0)//0인 경우 -1
                         map2[x][y] = -1;
                     x+=dx[dirct[index]];
                     y+=dy[dirct[index]];
                 }
-//                if(f)
-//                    print(map2);
                 index++;
             }else if(map2[i][j] == 2){
                 for(int k=0; k<3; k+=2){
-                    x=i+dx[(dirct[index]+k)%4];
+                    x=i+dx[(dirct[index]+k)%4];//%4앞에 괄호를 빼먹어서 애먹었던 부분
                     y=j+dy[(dirct[index]+k)%4];
                     while(x>=0 && x<n && y>=0 && y<m){
                         if(map2[x][y] == 6)
@@ -63,7 +59,7 @@ int check(int map2[8][8], int f){
                 
                 index++;
             }else if(map2[i][j] == 3){
-                for(int k=0; k<2; k++){
+                for(int k=0; k<2; k++){//k값 범위를 잘못 설정했었음
                     x=i+dx[(dirct[index]+k)%4];
                     y=j+dy[(dirct[index]+k)%4];
                     while(x>=0 && x<n && y>=0 && y<m){
@@ -105,8 +101,6 @@ int check(int map2[8][8], int f){
                         y+=dy[(dirct[index]+k)%4];
                     }
                 }
-//                if(f)
-//                    print(map2);
                 index++;
             }
         }
@@ -117,22 +111,15 @@ int check(int map2[8][8], int f){
         for(int j=0; j<m; j++)
             if(map2[i][j] == 0)
                 ans++;
-//    if(ans == 7)
-//        print(map2);
     return ans;
 }
 
-int searching(int index){
+int searching(int index){//각각의 cctv 방향이 0,1,2,3 모든 경우의 수를 찾기 위한 함수
     if(index == cnt){
         int map2[8][8];
-        memcpy(map2, map, sizeof(map));
-        int f=0;
-//        if(dirct[0] == 0 && dirct[1] == 0 && dirct[2] == 0 && dirct[3] == 3 && dirct[4] == 3 && dirct[5] == 2 && dirct[6] == 2 && dirct[7] == 2){
-//            printf("1\n");
-//            print(map2);
-//            f = 1;
-//        }
-        return check(map2, f);
+        memcpy(map2, map, sizeof(map));//맵 복사
+        
+        return check(map2);
     }
     
     int ans = n*m;
@@ -153,14 +140,13 @@ int main(){
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             cin >> map[i][j];
-            if(map[i][j]>=1 && map[i][j]<=5){
-                cctv[cnt] = map[i][j];
-                dirct[cnt] = 0;
-                cnt++;
+            if(map[i][j]>=1 && map[i][j]<=5){//cctv일 경우
+                dirct[cnt] = 0;//처음에는 방향 0부터 시작
+                cnt++;//cctv 갯수 증가
             }
         }
     }
-    cout << searching(0);
+    cout << searching(0);//탐색
     
     return 0;
 }
