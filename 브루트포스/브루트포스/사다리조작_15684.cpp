@@ -11,73 +11,51 @@
 using namespace std;
 
 int map[30][10];
-int ladder[3][2]={0,};
 int n, m, h;
 
-int check(){
+int check(){//사다리의 윗부분부터 아래로 내려가는 함수
     int a=0, b=0;
     for(int i=0; i<n; i++){
         b=i;
         a=0;
-//        cout << endl;
-//        for(int i=0; i<h; i++){
-//            for(int j=0; j<n; j++){
-//                cout << map[i][j] << " ";
-//            }
-//            cout << endl;
-//        }
-//        cout << endl;
         for(int j=0; j<h; j++){
-            if(map[a][b] == 1){
+            if(map[a][b] == 1)
                 b++;
-            }else{
-                if(b>0){
+            else
+                if(b>0)
                     if(map[a][b-1] == 1)
                         b--;
-                }
-            }
             a++;
         }
-//        cout << b << endl;
-        
-        if(b != i){
+        if(b != i)//첫 시작점과 끝점이 다르면 리턴
             return 0;
-        }
-        
     }
     return 1;
 }
 
-int searchingMap(int num, int cnt){//사다리를 1,0으로 해야함 1,1이 아니라, 1일때는 오른쪽 검사, 0일때는 왼쪽 검사 이런식으로
+int searchingMap(int num, int cnt, int preI){//사다리를 1,0으로 해야함 1,1이 아니라, 1일때는 오른쪽 검사, 0일때는 왼쪽 검사 이런식으로
+    //사다리 완전 탐색 부분
     if(cnt == num){
         int ans = check();
-//        for(int i=0; i<h; i++){
-//            for(int j=0; j<n; j++){
-//                cout << map[i][j] << " ";
-//            }
-//            cout << endl;
-//        }
-//        cout << endl;
         if(ans)
             return 1;
         else
             return 0;
     }
-    for(int i=0; i<h; i++){
+    for(int i=preI; i<h; i++){//함수에 PreI인자를 더하고 for문에 시작을 preI로 함으로써 불필요한 탐색을 줄여 시간초과 문제를 해결할 수 있었음
         for(int j=0; j<n-1; j++){
             if(map[i][j] == 0 && map[i][j+1] == 0){
                 if(j > 0){
                     if(map[i][j-1] == 0){
                         map[i][j] = 1;
-                        if(searchingMap(num, cnt+1))
+                        if(searchingMap(num, cnt+1, i))//문제의 조건에 맞다면 리턴
                             return 1;
                         map[i][j] = 0;
-                        
                     }
                 }
                 else{
                     map[i][j] = 1;
-                    if(searchingMap(num, cnt+1))
+                    if(searchingMap(num, cnt+1, i))//문제의 조건에 맞다면 리턴
                         return 1;
                     map[i][j] = 0;
                 }
@@ -101,15 +79,8 @@ int main(){
         map[a-1][b-1] = 1;
     }
     
-//    for(int i=0; i<h; i++){
-//        for(int j=0; j<n; j++){
-//            cout << map[i][j] << " ";
-//        }
-//        cout << endl;
-//    }
-//
     for(int i=0; i<4; i++){
-        if(searchingMap(i, 0)){
+        if(searchingMap(i, 0, 0)){
             cout << i << endl;
             return 0;
         }
