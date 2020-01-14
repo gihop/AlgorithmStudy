@@ -10,7 +10,8 @@
 
 using namespace std;
 
-int map[10][30];
+int map[30][10];
+int ladder[3][2]={0,};
 int n, m, h;
 
 int check(){
@@ -18,22 +19,27 @@ int check(){
     for(int i=0; i<n; i++){
         b=i;
         a=0;
+//        cout << endl;
+//        for(int i=0; i<h; i++){
+//            for(int j=0; j<n; j++){
+//                cout << map[i][j] << " ";
+//            }
+//            cout << endl;
+//        }
+//        cout << endl;
         for(int j=0; j<h; j++){
             if(map[a][b] == 1){
+                b++;
+            }else{
                 if(b>0){
                     if(map[a][b-1] == 1)
                         b--;
-                    else
-                        b++;
-                }else{
-                    b++;
                 }
-                a++;
-            }else{
-                a++;
             }
+            a++;
         }
-        cout << b << endl;
+//        cout << b << endl;
+        
         if(b != i){
             return 0;
         }
@@ -45,6 +51,13 @@ int check(){
 int searchingMap(int num, int cnt){//사다리를 1,0으로 해야함 1,1이 아니라, 1일때는 오른쪽 검사, 0일때는 왼쪽 검사 이런식으로
     if(cnt == num){
         int ans = check();
+//        for(int i=0; i<h; i++){
+//            for(int j=0; j<n; j++){
+//                cout << map[i][j] << " ";
+//            }
+//            cout << endl;
+//        }
+//        cout << endl;
         if(ans)
             return 1;
         else
@@ -53,12 +66,21 @@ int searchingMap(int num, int cnt){//사다리를 1,0으로 해야함 1,1이 아
     for(int i=0; i<h; i++){
         for(int j=0; j<n-1; j++){
             if(map[i][j] == 0 && map[i][j+1] == 0){
-                map[i][j] = 1;
-                map[i][j+1] = 1;
-                if(searchingMap(num, cnt+1))
-                    return 1;
-                map[i][j] = 0;
-                map[i][j+1] = 1;
+                if(j > 0){
+                    if(map[i][j-1] == 0){
+                        map[i][j] = 1;
+                        if(searchingMap(num, cnt+1))
+                            return 1;
+                        map[i][j] = 0;
+                        
+                    }
+                }
+                else{
+                    map[i][j] = 1;
+                    if(searchingMap(num, cnt+1))
+                        return 1;
+                    map[i][j] = 0;
+                }
             }
         }
     }
@@ -77,17 +99,22 @@ int main(){
     for(int i=0; i<m; i++){
         cin >> a >> b;
         map[a-1][b-1] = 1;
-        map[a-1][b]= 1;
     }
     
-    for(int i=0; i<h; i++){
-        for(int j=0; j<n; j++){
-            cout << map[i][j] << " ";
+//    for(int i=0; i<h; i++){
+//        for(int j=0; j<n; j++){
+//            cout << map[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
+//
+    for(int i=0; i<4; i++){
+        if(searchingMap(i, 0)){
+            cout << i << endl;
+            return 0;
         }
-        cout << endl;
     }
-    
-    searchingMap(1, 0);
+    cout << -1 << endl;
     
     return 0;
 }
