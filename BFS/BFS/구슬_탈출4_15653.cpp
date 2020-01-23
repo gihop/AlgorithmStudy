@@ -79,7 +79,7 @@ int main(){
         cin >> a[i];
     
     int ans=-1;
-    queue<tuple<int,int,int,int>> q;
+    queue<tuple<int,int,int,int>> q;//튜플을 쓴 이유는 인자가 4개라서 pair만으로 할 수 없기 때문.
     int rx, ry, bx, by;
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
