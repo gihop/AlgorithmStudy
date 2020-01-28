@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F73B7FC1238565D700377D02 /* LCD_TEST_2290.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F73B7FC0238565D700377D02 /* LCD_TEST_2290.cpp */; };
+		F785307423E060D2006744AE /* 로봇청소기_14503.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F785307323E060D2006744AE /* 로봇청소기_14503.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +26,7 @@
 		F70EE6592375973C004CA9F6 /* 시뮬레이션 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "시뮬레이션"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70EE66623759796004CA9F6 /* 뱀_3190.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "뱀_3190.cpp"; sourceTree = "<group>"; };
 		F73B7FC0238565D700377D02 /* LCD_TEST_2290.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCD_TEST_2290.cpp; sourceTree = "<group>"; };
+		F785307323E060D2006744AE /* 로봇청소기_14503.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇청소기_14503.cpp"; sourceTree = "<group>"; };
 		F7BD8C1923805D9B001C27F6 /* iSharp_3568.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iSharp_3568.cpp; sourceTree = "<group>"; };
 		F7F59509237D912C00CAE9C8 /* 드래곤커브_15685.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "드래곤커브_15685.cpp"; sourceTree = "<group>"; };
 		F7FAB352237EE91F00B86CA5 /* 미네랄_2933.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "미네랄_2933.cpp"; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 				F7FAB352237EE91F00B86CA5 /* 미네랄_2933.cpp */,
 				F7BD8C1923805D9B001C27F6 /* iSharp_3568.cpp */,
 				F73B7FC0238565D700377D02 /* LCD_TEST_2290.cpp */,
+				F785307323E060D2006744AE /* 로봇청소기_14503.cpp */,
 			);
 			path = "시뮬레이션";
 			sourceTree = "<group>";
@@ -126,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73B7FC1238565D700377D02 /* LCD_TEST_2290.cpp in Sources */,
+				F785307423E060D2006744AE /* 로봇청소기_14503.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
