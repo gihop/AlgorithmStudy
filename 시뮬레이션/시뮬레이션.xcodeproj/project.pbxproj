@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F736289B23E331B000B75F7F /* 나무_재테크_16235.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F788706023E2B39F001E50D4 /* 나무_재테크_16235.cpp */; };
+		F736289D23E3F53E00B75F7F /* 아기_상어_16236.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F736289C23E3F53E00B75F7F /* 아기_상어_16236.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F70EE6592375973C004CA9F6 /* 시뮬레이션 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "시뮬레이션"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70EE66623759796004CA9F6 /* 뱀_3190.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "뱀_3190.cpp"; sourceTree = "<group>"; };
+		F736289C23E3F53E00B75F7F /* 아기_상어_16236.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "아기_상어_16236.cpp"; sourceTree = "<group>"; };
 		F73B7FC0238565D700377D02 /* LCD_TEST_2290.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCD_TEST_2290.cpp; sourceTree = "<group>"; };
 		F785307323E060D2006744AE /* 로봇청소기_14503.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇청소기_14503.cpp"; sourceTree = "<group>"; };
 		F785307523E07015006744AE /* 경사로_14890.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "경사로_14890.cpp"; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				F785307323E060D2006744AE /* 로봇청소기_14503.cpp */,
 				F785307523E07015006744AE /* 경사로_14890.cpp */,
 				F788706023E2B39F001E50D4 /* 나무_재테크_16235.cpp */,
+				F736289C23E3F53E00B75F7F /* 아기_상어_16236.cpp */,
 			);
 			path = "시뮬레이션";
 			sourceTree = "<group>";
@@ -132,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F736289B23E331B000B75F7F /* 나무_재테크_16235.cpp in Sources */,
+				F736289D23E3F53E00B75F7F /* 아기_상어_16236.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
