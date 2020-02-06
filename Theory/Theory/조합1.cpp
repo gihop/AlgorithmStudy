@@ -1,5 +1,5 @@
 //
-//  조합.cpp
+//  조합1.cpp
 //  Theory
 //
 //  Created by jiho park on 2020/02/07.
@@ -11,7 +11,7 @@
 #define endl "\n"
 using namespace std;
 
-//5개의 숫자중에 3개의 조합을 뽑기.
+//5개의 숫자중에 3개의 조합(순서 없음, 어느것이 먼저 true여도 상관이 없음)을 뽑기.
 
 int arr[5];
 bool select[5];
@@ -23,7 +23,7 @@ void DFS(int idx, int cnt){
                 cout << arr[i] << " ";
         cout << endl;
         
-        
+        return;
     }
     for(int i=idx; i<5; i++){
         if(select[i]) continue;
