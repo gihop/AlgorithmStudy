@@ -16,14 +16,14 @@ using namespace std;
 int arr[5];
 bool select[5];
 
-void DFS(int idx, int cnt){
-    if(cnt == 3){
+void DFS(int idx, int cnt){//조합은 이미 넣어진 값을 다시 볼 필요가 없기 때문에 idx가 필요하다. 바로 다음 원소부터 봐야하기 때문.
+    if(cnt == 3){//뽑아야 하는 갯수 결정.
         for(int i=0; i<5; i++)
             if(select[i])
                 cout << arr[i] << " ";
         cout << endl;
         
-        return;
+        return;//리턴의 의미는 뽑아야 하는 갯수가 모두 모인 뒤에 반환된 뒤에 맨 뒤의 원소를 조합에서 제거하게 됨.
     }
     for(int i=idx; i<5; i++){
         if(select[i]) continue;

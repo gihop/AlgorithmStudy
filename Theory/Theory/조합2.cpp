@@ -23,7 +23,8 @@ void DFS(int idx, int cnt){
                 cout << arr[i] << " ";
         cout << endl;
         
-        //***return이 없음.***
+        //***return이 없음 주의.***
+        //return이 없기 때문에 그대로 맨 뒤의 원소를 조합에서 제거하지 않고 넣을 원소가 더 있다면 더 넣고 다 넣었을 경우 제거하게 됨.
     }
     for(int i=idx; i<5; i++){
         if(select[i]) continue;
