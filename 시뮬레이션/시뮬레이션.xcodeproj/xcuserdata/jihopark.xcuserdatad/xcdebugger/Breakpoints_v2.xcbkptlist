@@ -1082,11 +1082,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.385602"
+            timestampString = "602667483.1457011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "go(int x, int y, int s, vector&lt;int&gt; a[10], vector&lt;int&gt; count)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1098,11 +1098,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.38625"
+            timestampString = "602667483.145848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "go(int x, int y, int s, vector&lt;int&gt; a[10], vector&lt;int&gt; count)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1114,11 +1114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.3868181"
+            timestampString = "602667483.1459399"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "go(int x, int y, int s, vector&lt;int&gt; a[10], vector&lt;int&gt; count)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1130,11 +1130,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.387289"
+            timestampString = "602667483.146022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -1146,11 +1146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.387709"
+            timestampString = "602667483.1460969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "attach(vector&lt;int&gt; a[10], vector&lt;int&gt; count, int size, int x, int y)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1162,12 +1162,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x1109;&#x1162;&#x11a8;&#x110c;&#x1169;&#x11bc;&#x110b;&#x1175;_&#x1107;&#x116e;&#x11c0;&#x110b;&#x1175;&#x1100;&#x1175;_17136.cpp"
-            timestampString = "602606514.3882329"
+            timestampString = "602667483.1461689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "go(int x, int y, int s, vector&lt;int&gt; a[10], vector&lt;int&gt; count)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x110b;&#x1163;&#x1100;&#x116e;_17281.cpp"
+            timestampString = "602667483.146237"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "go(vector&lt;int&gt; order, vector&lt;bool&gt; check)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x110b;&#x1163;&#x1100;&#x116e;_17281.cpp"
+            timestampString = "602667483.146701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "go(vector&lt;int&gt; order, vector&lt;bool&gt; check)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x110b;&#x1163;&#x1100;&#x116e;_17281.cpp"
+            timestampString = "602667483.147168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "go(vector&lt;int&gt; order, vector&lt;bool&gt; check)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1109;&#x1175;&#x1106;&#x1172;&#x11af;&#x1105;&#x1166;&#x110b;&#x1175;&#x1109;&#x1167;&#x11ab;/&#x110b;&#x1163;&#x1100;&#x116e;_17281.cpp"
+            timestampString = "602667483.147584"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "go(vector&lt;int&gt; order, vector&lt;bool&gt; check)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
