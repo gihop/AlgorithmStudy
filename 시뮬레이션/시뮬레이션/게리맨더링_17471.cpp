@@ -8,145 +8,106 @@
 
 #include <iostream>
 #include <vector>
-#include <tuple>
-#include <algorithm>
-#include <set>
 #include <queue>
-
-using namespace std;
-//
-//int n;
-//vector<int> pop;
-//set<tuple<bool,bool,bool,bool,bool,bool,bool,bool,bool,bool>> s;
-//
-//
-//void go(vector<int> conn[n], vector<bool> decision, vector<bool> check){
-//    if(decision.size()==n){
-//        vector<bool> tmp;
-//        for(int i=0; i<10; i++){
-//            if(i>=decision.size())
-//                tmp.push_back(false);
-//            else
-//                tmp.push_back(decision[i]);
-//        }
-//        if(s.count(make_tuple(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6],tmp[7],tmp[8],tmp[9]))==0) return;
-//        s.insert(make_tuple(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5],tmp[6],tmp[7],tmp[8],tmp[9]));
-//
-//        vector<int> first, second;
-//        vector<bool> firstCheck, secondCheck;
-//        for(int i=0; i<n; i++){
-//            if(decision[i]){
-//                first.push_back(decision[i]);
-//                firstCheck.push_back(false);
-//            }
-//            else{
-//                second.push_back(decision[i]);
-//                secondCheck.push_back(false);
-//            }
-//        }
-//        for(int i=0; i<first.size(); i++){
-//            queue<int> q;
-//            q.emplace(first[i]);
-//            while(!q.empty()){
-//                int num;
-//                num = q.front();
-//                for(int j=0; j<conn[i].size(); j++){
-//                    int nn = conn[i][j];
-//                    if(!tmp[nn]) continue;
-//
-//                }
-//            }
-//        }
-//
-//
-//
-//        return;
-//    }
-//    for(int i=0; i<n; i++){
-//        if(check[i]) continue;
-//        decision.push_back(true);
-//        check[i]=true;
-//        go(conn, decision, check);
-//        decision.pop_back();
-//        decision.push_back(false);
-//        go(conn, decision, check);
-//        decision.pop_back();
-//        check[i]=false;
-//    }
-//}
-//
-//int main(){
-//    ios_base::sync_with_stdio(false);
-//    cin.tie(NULL);
-//
-//    cin >> n;
-//
-//    for(int i=0; i<n; i++){
-//        int population;
-//        cin >> population;
-//        pop.push_back(population);
-//    }
-//
-//    vector<int> conn[n];
-//
-//    for(int i=0; i<n; i++){
-//        int count;
-//        cin >> count;
-//        for(int j=0; j<count; j++){
-//            int info;
-//            cin >> info;
-//            conn[i].push_back(info);
-//        }
-//    }
-//    vector<bool> check,decision;
-//    for(int i=0; i<n; i++){
-//        check.push_back(false);
-//        decision.push_back(false);
-//    }
-//
-//    go(conn, decision, check);
-//
-//
-//    return 0;
-//}
+#include <cstring>
+#include <cstdlib>
 
 #define endl "\n"
-#define MAX 4
 using namespace std;
 
-int N, Answer = 987654321;
-int Person[MAX];        // 인구수를 저장하기 위한 배열
-bool Connect[MAX][MAX];    // 구역들 간의 연결관계를 저장하기 위한 배열
-bool Select[MAX];        // 조합 구현 시, 뽑은 데이터에 대한 체크를 저장하기 위한 배열
-bool Visit[MAX];
+//이 문제에서 관건은 1이상의 조합을 만드는 것과 conn[10][10] 배열을 만드는 것이다.
+//1번 지역과 2번 지역이 연결이 되어있다면 conn[1][2]=true; conn[2][1]=true; 가 핵심이다.
 
-void DFS(int Idx, int Cnt)
-{
-    /* 조합 구현을 위한 DFS 함수. */
-    if (Cnt >= 1)
-    {
-        /* 최소 1개 이상의 원소만 뽑으면 모두 계산해줄 것이므로 조건문 : Cnt >= 1 */
-        for(int i=0; i<MAX; i++)
-            if(Select[i])
-                cout << i << " ";
-        cout << endl;
-        // return이 없으니 조심하자 !
-        
+int n;
+int person[10];
+bool conn[10][10];
+bool selected[10];
+bool check_conn[10];
+int ans=999999999;
+
+bool check_connection(vector<int> v){//선거구 내의 지역들이 모두 연결되어 있는지 검사한다.
+    memset(check_conn, false, sizeof(check_conn));
+    queue<int> q;
+    q.emplace(v[0]);//첫 번째 지역을 큐에 넣는다.
+    int cnt=1;
+    bool t=selected[v[0]];//첫 번째 지역이 true인지 false 인지 저장한다. 같은 선거구인지 확인하기 위함이다.
+    check_conn[v[0]]=true;//이미 방문한 지역을 다시 안가기 위함.
+    while(!q.empty()){
+        int num = q.front();
+        q.pop();
+        for(int i=0; i<n; i++){
+            if(!conn[num][i]) continue;//두 지역이 연결되어있지 않은 경우.
+            if(check_conn[i]) continue;//이미 방문한 지역인 경우.
+            if(t != selected[i]) continue;//같은 선거구가 아닌 경우.
+            cnt++;
+            check_conn[i]=true;
+            q.emplace(i);
+        }
     }
-    
-    for (int i = Idx; i < MAX; i++)
-    {
-        if (Select[i] == true) continue;
-        Select[i] = true;
-        DFS(i, Cnt + 1);
-        Select[i] = false;
+    if(cnt == v.size())//벡터에 넣어있는(같은 선거구) 같은 지역의 숫자와 cnt 숫자가 같으면 모두 연결되어 있음을 뜻한다. 지역구내에 첫 번째 지역부터 같은 선거구 내의 다른 지역을 모두 방문할 수 있기 때문.
+        return true;
+    else
+        return false;
+}
+
+void go(int idx, int cnt){//조합(순서 상관없는)이므로 idx를 이용한다. 이전 인덱스를 필요로 하지 않는다.
+    if(cnt>0){//한개라도 지역을 뽑으면 실행된다. 이 부분에는 return이 없다.
+        vector<int> a,b;
+        for(int i=0; i<n; i++){
+            if(selected[i])//select에 표시된 true 지역은 a 벡터, false는 b 벡터.
+                a.push_back(i);
+            else
+                b.push_back(i);
+        }
+        bool check=true;
+        if(a.empty() || b.empty()) check=false;//각 선거구가 하나의 지역구를 가지고 있어야 한다.
+        if(check){//각 선거구가 최소 한개의 지역을 가지고 있을 경우.
+            if(check_connection(a) && check_connection(b)){//각 선거구내의 지역들이 모두 연결되어 있는 경우.
+                int apop=0, bpop=0;
+                for(int i=0; i<a.size(); i++)
+                    apop+=person[a[i]];
+                for(int i=0; i<b.size(); i++)
+                    bpop+=person[b[i]];
+                int sub = abs(apop-bpop);
+                if(ans > sub)
+                    ans = sub;
+            }
+        }
+    }
+    for(int i=idx; i<n; i++){
+        if(selected[i]) continue;
+        selected[i]=true;
+        go(i, cnt+1);//idx가 아니라 i를 보내야 한다. 자주 실수하는 부분.
+        selected[i]=false;
     }
 }
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     
-    DFS(0,0);
+    cin >> n;
+    
+    for(int i=0; i<n; i++)
+        cin >> person[i];
+    
+    for(int i=0; i<n; i++){
+        int cnt;
+        cin >> cnt;
+        for(int j=0; j<cnt; j++){
+            int tmp;
+            cin >> tmp;
+            conn[i][tmp-1]=true;//지역이 연결되어있는 곳을 배열에 저장한다.
+            conn[tmp-1][i]=true;
+        }
+    }
+    
+    go(0,0);
+    
+    if(ans == 999999999)
+        cout << -1;
+    else
+        cout << ans;
     
     return 0;
 }
-
