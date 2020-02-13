@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7378F6023F525C500267114 /* 로고_3108.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7378F5F23F525C500267114 /* 로고_3108.cpp */; };
+		F7378F6223F5673000267114 /* 중량제한_1939.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7378F6123F5673000267114 /* 중량제한_1939.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F7378F5D23F441C000267114 /* 로봇_1726.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇_1726.cpp"; sourceTree = "<group>"; };
 		F7378F5F23F525C500267114 /* 로고_3108.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로고_3108.cpp"; sourceTree = "<group>"; };
+		F7378F6123F5673000267114 /* 중량제한_1939.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "중량제한_1939.cpp"; sourceTree = "<group>"; };
 		F77C358D23F0191F00ABA51F /* 보물섬_2589.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "보물섬_2589.cpp"; sourceTree = "<group>"; };
 		F77C358F23F01C5800ABA51F /* 벽_부수고_이동하기_2206.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "벽_부수고_이동하기_2206.cpp"; sourceTree = "<group>"; };
 		F77C359123F128FF00ABA51F /* 빙산_2573.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "빙산_2573.cpp"; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 				F77C359F23F430A600ABA51F /* 상범_빌딩_6593.cpp */,
 				F7378F5D23F441C000267114 /* 로봇_1726.cpp */,
 				F7378F5F23F525C500267114 /* 로고_3108.cpp */,
+				F7378F6123F5673000267114 /* 중량제한_1939.cpp */,
 			);
 			path = BFS;
 			sourceTree = "<group>";
@@ -174,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7378F6023F525C500267114 /* 로고_3108.cpp in Sources */,
+				F7378F6223F5673000267114 /* 중량제한_1939.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
