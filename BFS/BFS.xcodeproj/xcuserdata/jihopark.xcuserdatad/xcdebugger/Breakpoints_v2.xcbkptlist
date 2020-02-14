@@ -1626,7 +1626,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1106;&#x116e;&#x11ab;&#x110c;&#x1161;&#x1111;&#x1161;&#x11ab;_2186.cpp"
-            timestampString = "603297693.0137039"
+            timestampString = "603373691.5212131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
@@ -1642,7 +1642,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1109;&#x1161;&#x11bc;&#x1107;&#x1165;&#x11b7;_&#x1107;&#x1175;&#x11af;&#x1103;&#x1175;&#x11bc;_6593.cpp"
-            timestampString = "603297693.013818"
+            timestampString = "603373691.521315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
@@ -1658,7 +1658,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1109;&#x1161;&#x11bc;&#x1107;&#x1165;&#x11b7;_&#x1107;&#x1175;&#x11af;&#x1103;&#x1175;&#x11bc;_6593.cpp"
-            timestampString = "603297693.013906"
+            timestampString = "603373691.521402"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -1674,7 +1674,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1109;&#x1161;&#x11bc;&#x1107;&#x1165;&#x11b7;_&#x1107;&#x1175;&#x11af;&#x1103;&#x1175;&#x11bc;_6593.cpp"
-            timestampString = "603297693.0139821"
+            timestampString = "603373691.521479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -1690,7 +1690,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1105;&#x1169;&#x1100;&#x1169;_3108.cpp"
-            timestampString = "603297693.014057"
+            timestampString = "603373691.521554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -1706,7 +1706,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1105;&#x1169;&#x1100;&#x1169;_3108.cpp"
-            timestampString = "603297693.014135"
+            timestampString = "603373691.521633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -1722,11 +1722,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BFS/&#x1105;&#x1169;&#x1100;&#x1169;_3108.cpp"
-            timestampString = "603297693.014207"
+            timestampString = "603373691.521706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BFS/&#x1103;&#x1161;&#x11af;&#x110b;&#x1175;_&#x110e;&#x1161;&#x110b;&#x1169;&#x1105;&#x1173;&#x11ab;&#x1103;&#x1161;,_&#x1100;&#x1161;&#x110c;&#x1161;.cpp"
+            timestampString = "603373691.5217839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BFS/&#x1103;&#x1161;&#x11af;&#x110b;&#x1175;_&#x110e;&#x1161;&#x110b;&#x1169;&#x1105;&#x1173;&#x11ab;&#x1103;&#x1161;,_&#x1100;&#x1161;&#x110c;&#x1161;.cpp"
+            timestampString = "603373691.5223579"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
