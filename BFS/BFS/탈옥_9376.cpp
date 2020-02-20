@@ -11,17 +11,105 @@
 #include <tuple>
 #include <vector>
 #include <cstring>
+#include <deque>
 
 #define endl "\n"
 using namespace std;
 
-char a[100][100];
-int check[100][100][36];
-int d[100][100][2];
+//https://rebas.kr/770 참고
+//생각의 전환이 필요한 문제.
+//우선 맵을 확장해야 한다.
+
+//이런 모양의 맵이 있다면
+//..........
+//.********.
+//.*.##.$$*.
+//...**.***.
+//.*....***.
+//.********.
+//..........
+//입력을 받을 때 맵을 이런 방식으로 테두리를 확장해준다.
+//총 경우의 수는 3가지로
+//1. 1번 죄수부터 출발하여 문을 여는 경우.
+//2. 2번 죄수부터 출발하여 문을 여는 경우.
+//3. 바깥쪽에서 출발하여 문을 여는 경우.
+//위 3가지 경우를 각각 더하고 그 중 가장 작은 값이 문을 여는 최솟값이 된다.
+//하지만 문은 한 번만 열기 때문에, 문은 2를 뺀다.
+//데크를 사용하는 이유는 먼저 빈 공간을 우선적으로 이동해야 하기 때문이다.
+//그래서 다음 이동할 칸이 빈공간인 경우에는 데크의 앞에 push를 하고,
+//문인 경우에는 데크의 뒤에 push를 해야한다.
+//..........
+//.********.
+//.*.##.$$*.
+//...**.***.
+//.*....***.
+//.********.
+//..........
+//이 그림의 경우 밖에서 들어올 때 데크를 사용하지 않으면
+//0000000000
+//0********0
+//0*012222*0
+//000**0***0
+//0*0000***0
+//0********0
+//0000000000
+//이렇게 된다.
+//데크를 사용해서 빈공간을 데크의 앞에 푸시한다면
+//0000000000
+//0********0
+//0*011000*0
+//000**0***0
+//0*0000***0
+//0********0
+//0000000000
+//그래서 빈공간 부터 넣어줘야 한다.
+
+char a[102][102];
+int d[102][102][3];
 int tc;
 int n,m;
 int dx[]={0, 1, 0, -1};
 int dy[]={1, 0, -1, 0};
+vector<pair<int,int>> v;
+
+void bfs(){
+    v.push_back(make_pair(0,0));
+    for(int i=0; i<3; i++){
+        int ax,ay;
+        tie(ax,ay) = v[i];
+        deque<pair<int,int>> dq;
+        dq.push_back(make_pair(ax,ay));
+        d[ax][ay][i]=0;
+        while(!dq.empty()){
+            int x,y;
+            tie(x,y) = dq.front();
+            dq.pop_front();
+            for(int j=0; j<4; j++){
+                int nx, ny;
+                nx = x+dx[j];
+                ny = y+dy[j];
+                if(nx<0 || nx>=n+2 || ny<0 || ny>=m+2) continue;
+                if(a[nx][ny]=='*') continue;
+                if(d[nx][ny][i]>=0) continue;
+                if(a[nx][ny]=='#'){
+                    dq.push_back(make_pair(nx,ny));//문일 경우에는 데크의 뒤에 삽입한다.
+                    d[nx][ny][i] = d[x][y][i]+1;
+                }else if(a[nx][ny]=='.'){
+                    dq.push_front(make_pair(nx,ny));//빈 공간은 우선적으로 데크의 앞에 삽입한다.
+                    d[nx][ny][i] = d[x][y][i];
+                }
+            }
+        }
+//        for(int j=0; j<n+2; j++){//배열값을 확인하기 위한 용도.
+//            for(int k=0; k<m+2; k++){
+//                if(d[j][k][i]==-1) cout << '*';
+//                else cout << d[j][k][i];
+//            }
+//            cout << endl;
+//        }
+//        cout << endl;
+    }
+}
 
 int main(){
     ios_base::sync_with_stdio(false);
@@ -31,223 +119,31 @@ int main(){
     cin >> tc;
     for(int t=0; t<tc; t++){
         cin >> n >> m;
-        vector<tuple<int,int,int,int>> entrance;
-        int freeperson=0;
-//        1
-//        3 4
-//        ****
-//        #$*$
-//        ****
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                cin >> a[i][j];
-                if(i==0 || j==0 || i==n-1 || j==m-1){
-                    if(a[i][j]=='*') continue;
-                    else if(a[i][j]=='.'){
-                        entrance.push_back(make_tuple(i,j,0,1));
-                    }
-                    else if(a[i][j]=='#'){
-                        entrance.push_back(make_tuple(i,j,1,1));
-                    }
-                    else if(a[i][j]=='$'){
-                        entrance.push_back(make_tuple(i,j,0,1));
-                        freeperson++;
-                    }
+        v.clear();//죄수의 위치를 매 테스트케이스마다 초기화해줘야 한다.
+        for(int i=0; i<n+2; i++){
+            for(int j=0; j<m+2; j++){
+                if(i==0 || j==0 || i==n+1 || j==m+1) a[i][j]='.';//테두리에 빈공간을 넣는다.
+                else cin >> a[i][j];
+                if(a[i][j]=='$'){
+                    v.push_back(make_pair(i,j));
+                    a[i][j]='.';
                 }
             }
         }
-        queue<tuple<int,int,int,int,int,vector<pair<int,int>>>> q;//좌표, 문 갯수, 사람 수, 출발 번호.
-        for(int i=0; i<entrance.size(); i++){
-            int x,y,gate,person;
-            tie(x,y,gate,person) = entrance[i];
-            person+=freeperson;
-            vector<pair<int,int>> track;
-            if(gate>0)
-                track.push_back(make_pair(x,y));
-            q.emplace(x,y,gate,person,i,track);
-            check[x][y][i]=person;
-        }
-        
-        bool found=false;
-        int ans=999999999;
-        int ax,ay;
-//        vector<pair<int,int>> freeTrack;
-        while(!q.empty()){
-            int x,y,gate,person,num;
-            vector<pair<int,int>> track;
-            tie(x,y,gate,person,num,track) = q.front();
-            q.pop();
-            if(person==2){
-                found=true;
-//                if(ans > gate){
-                ax=x;
-                ay=y;
-                memset(d, 0, sizeof(d));
-                for(int i=0; i<track.size(); i++){
-                    int x,y;
-                    tie(x,y) = track[i];
-                    d[x][y][1]=-1;
-                }
-                queue<tuple<int,int,int>> q2;
-                q2.emplace(ax,ay,gate);
-                d[ax][ay][0]=gate;
-                found = false;
-                
-                while(!q2.empty()){
-                    int x,y,gate;
-                    tie(x,y,gate) = q2.front();
-                    q2.pop();
-                    if(a[x][y]=='$' && (x!=ax || y!=ay)){
-                        found = true;
-                        if(ans > gate)
-                            ans = gate;
-                        continue;
-                    }
-                    if(found && gate >= ans) continue;
-                    for(int i=0; i<4; i++){
-                        int nx,ny;
-                        nx = x+dx[i];
-                        ny = y+dy[i];
-                        if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
-                        int nGate = gate;
-                        if(a[nx][ny]=='#' && d[nx][ny][1]==0) nGate++;
-                        if(d[nx][ny][0]>0 && d[nx][ny][0]<=nGate) continue;
-                        if(a[nx][ny]=='*') continue;
-                        if(a[nx][ny]=='.'){
-                            q2.emplace(nx,ny,gate);
-                            d[nx][ny][0]=gate;
-                        }
-                        else if(a[nx][ny]=='#'){
-                            if(d[nx][ny][1]==0){
-                                q2.emplace(nx,ny,gate+1);
-                                d[nx][ny][0]=gate+1;
-                            }else{
-                                q2.emplace(nx,ny,gate);
-                                d[nx][ny][0]=gate;
-                            }
-                        }else if(a[nx][ny]=='$'){
-                            q2.emplace(nx,ny,gate);
-//                            d[nx][ny]=1; 이거있으면 틀림
-//                            2 2
-//                            .$
-//                            $#
-                        }
-                    }
-                }
-                
-                continue;
-            }
-            if(found && gate >= ans) continue;
-            
-            for(int i=0; i<4; i++){
-                int nx,ny;
-                nx = x+dx[i];
-                ny = y+dy[i];
-                if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
-                int nGate=gate;
-                if(a[nx][ny]=='#') nGate++;
-                if(check[nx][ny][num]>0 && check[nx][ny][num]<=nGate) continue;
-                if(a[nx][ny]=='*') continue;
-                vector<pair<int,int>> nTrack = track;
-                if(a[nx][ny]=='.'){
-                    q.emplace(nx,ny,gate,person,num,nTrack);
-                    check[nx][ny][num]=person;
-                }
-                else if(a[nx][ny]=='#'){
-                    nTrack.push_back(make_pair(nx,ny));
-                    q.emplace(nx,ny,gate+1,person,num,nTrack);
-                    check[nx][ny][num]=person;
-                }
-                else if(a[nx][ny]=='$'){
-                    q.emplace(nx,ny,gate,person+1,num,nTrack);
-                    check[nx][ny][num]=person+1;
-                }
+        memset(d, -1, sizeof(d));
+        bfs();
+        int min=999999999;
+        for(int i=0; i<n+2; i++){//세 배열의 값을 합한다.
+            for(int j=0; j<m+2; j++){
+                if(a[i][j]=='*') continue;
+                int k = d[i][j][0]+d[i][j][1]+d[i][j][2];
+                if(a[i][j]=='#') k-=2;//문일 경우에는 -2를 한다. 문은 한 번만 열면 되기 때문.
+                if(k<min)//가장 작은 값을 찾는다.
+                    min = k;
             }
         }
-//        for(int i=0; i<freeTrack.size(); i++){
-//            int x,y;
-//            tie(x,y) = freeTrack[i];
-//            d[x][y]=-1;
-//        }
-//        queue<tuple<int,int,int>> q2;
-//        q2.emplace(ax,ay,ans);
-//        d[ax][ay]=1;
-//        ans=999999999;
-//        found = false;
-//        while(!q2.empty()){
-//            int x,y,gate;
-//            tie(x,y,gate) = q2.front();
-//            q2.pop();
-//            if(a[x][y]=='$' && (x!=ax || y!=ay)){
-//                found = true;
-//                if(ans > gate)
-//                    ans = gate;
-//                continue;
-//            }
-//            if(found && gate >= ans) continue;
-//            for(int i=0; i<4; i++){
-//                int nx,ny;
-//                nx = x+dx[i];
-//                ny = y+dy[i];
-//                if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
-//                if(d[nx][ny]>0) continue;
-//                if(a[nx][ny]=='*') continue;
-//                if(a[nx][ny]=='.'){
-//                    q2.emplace(nx,ny,gate);
-//                    d[nx][ny]=1;
-//                }
-//                else if(a[nx][ny]=='#'){
-//                    if(d[nx][ny]==-1)
-//                        q2.emplace(nx,ny,gate);
-//                    else
-//                        q2.emplace(nx,ny,gate+1);
-//                    d[nx][ny]=1;
-//                }else if(a[nx][ny]=='$'){
-//                    q2.emplace(nx,ny,gate);
-//                    d[nx][ny]=1;
-//                }
-//            }
-//        }
-        
-        cout << ans << endl;
-        
-        memset(check, 0, sizeof(check));
-        memset(d, 0, sizeof(d));
+        cout << min << endl;
     }
     
     return 0;
 }
-
-//3
-//5 9
-//****#****
-//*..#.#..*
-//****.****
-//*$#.#.#$*
-//*********
-//
-//5 9
-//****#****
-//*..#.#..*
-//****.****
-//*$#.#.#​$*
-//*********
-
-//3 4
-//****
-//#$*$
-//****
-
-//5 8
-//********
-//*....***
-//..**.$$*
-//*.##.***
-//********
-
-//5 8
-//********
-//*....***
-//..**.$$*
-//*....***
-//********
