@@ -2351,8 +2351,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "divide(int x)"
-            landmarkType = "9">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2367,7 +2367,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "spin(int a, int b, int c, int d)"
+            landmarkName = "divide(int x)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2415,7 +2415,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "bfs(int a, int b)"
+            landmarkName = "spin(int a, int b, int c, int d)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
