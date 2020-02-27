@@ -17,7 +17,7 @@ using namespace std;
 int arr[5];
 int select[5];//조합1과 조합2와 달리 여기서 select는 뽑은 카드를 저장한다. 즉 select[cnt]=arr[i]는 "cnt 번째 뽑은 카드는 arr[i]이다" 를 의미한다.
 
-void go(int idx, int cnt){//조합1, 조합2와 마찬가지로 idx는 포함한다. 조합이기 때문에 이전의 뽑은 숫자는 다시 뽑을 필요가 없기 때문이다.
+void go(int idx, int cnt){//조합1, 조합2와 마찬가지로 idx는 포함한다. 조합이기 때문에 이전에 뽑았던 인덱스에 다시 카드를 뽑을 필요가 없기 때문이다.
     if(cnt==3){
         for(int i=0; i<3; i++){
             cout << select[i] << " ";
