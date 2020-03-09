@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F79800202416390C000B036C /* 욕심쟁이_판다_1937.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F798001F2416390C000B036C /* 욕심쟁이_판다_1937.cpp */; };
+		F798002224168340000B036C /* 파일_합치기_11066.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F798002124168340000B036C /* 파일_합치기_11066.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +32,7 @@
 		F798001B2414DA32000B036C /* N-Rook_II_1767.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N-Rook_II_1767.cpp"; sourceTree = "<group>"; };
 		F798001D2416330D000B036C /* 내리막_길_1520.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "내리막_길_1520.cpp"; sourceTree = "<group>"; };
 		F798001F2416390C000B036C /* 욕심쟁이_판다_1937.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "욕심쟁이_판다_1937.cpp"; sourceTree = "<group>"; };
+		F798002124168340000B036C /* 파일_합치기_11066.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "파일_합치기_11066.cpp"; sourceTree = "<group>"; };
 		F79AA485240E777300865CAE /* DP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79AA48F240E778B00865CAE /* 퇴사2_15486.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "퇴사2_15486.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +77,7 @@
 				F798001B2414DA32000B036C /* N-Rook_II_1767.cpp */,
 				F798001D2416330D000B036C /* 내리막_길_1520.cpp */,
 				F798001F2416390C000B036C /* 욕심쟁이_판다_1937.cpp */,
+				F798002124168340000B036C /* 파일_합치기_11066.cpp */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -136,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79800202416390C000B036C /* 욕심쟁이_판다_1937.cpp in Sources */,
+				F798002224168340000B036C /* 파일_합치기_11066.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
