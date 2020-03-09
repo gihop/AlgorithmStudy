@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/Acka_12996.cpp"
-            timestampString = "605435539.369638"
+            timestampString = "605437437.330664"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/N-Rook_II_1767.cpp"
-            timestampString = "605435539.3697391"
+            timestampString = "605437437.330783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -154,11 +154,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1102;&#x1162;&#x1105;&#x1175;&#x1106;&#x1161;&#x11a8;_&#x1100;&#x1175;&#x11af;_1520.cpp"
-            timestampString = "605435539.369817"
+            timestampString = "605437437.330876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x110b;&#x116d;&#x11a8;&#x1109;&#x1175;&#x11b7;&#x110c;&#x1162;&#x11bc;&#x110b;&#x1175;_&#x1111;&#x1161;&#x11ab;&#x1103;&#x1161;_1937.cpp"
+            timestampString = "605437437.3309669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x110b;&#x116d;&#x11a8;&#x1109;&#x1175;&#x11b7;&#x110c;&#x1162;&#x11bc;&#x110b;&#x1175;_&#x1111;&#x1161;&#x11ab;&#x1103;&#x1161;_1937.cpp"
+            timestampString = "605437437.331441"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "go(int x, int y)"
             landmarkType = "9">
          </BreakpointContent>
