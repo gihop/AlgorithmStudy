@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7980024241902B9000B036C /* 고층_빌딩_1328.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7980023241902B9000B036C /* 고층_빌딩_1328.cpp */; };
+		F7980026241A2E1A000B036C /* 로봇_조종하기_2169.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7980025241A2E1A000B036C /* 로봇_조종하기_2169.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,7 @@
 		F798001F2416390C000B036C /* 욕심쟁이_판다_1937.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "욕심쟁이_판다_1937.cpp"; sourceTree = "<group>"; };
 		F798002124168340000B036C /* 파일_합치기_11066.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "파일_합치기_11066.cpp"; sourceTree = "<group>"; };
 		F7980023241902B9000B036C /* 고층_빌딩_1328.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "고층_빌딩_1328.cpp"; sourceTree = "<group>"; };
+		F7980025241A2E1A000B036C /* 로봇_조종하기_2169.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇_조종하기_2169.cpp"; sourceTree = "<group>"; };
 		F79AA485240E777300865CAE /* DP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79AA48F240E778B00865CAE /* 퇴사2_15486.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "퇴사2_15486.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +81,7 @@
 				F798001F2416390C000B036C /* 욕심쟁이_판다_1937.cpp */,
 				F798002124168340000B036C /* 파일_합치기_11066.cpp */,
 				F7980023241902B9000B036C /* 고층_빌딩_1328.cpp */,
+				F7980025241A2E1A000B036C /* 로봇_조종하기_2169.cpp */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -140,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7980024241902B9000B036C /* 고층_빌딩_1328.cpp in Sources */,
+				F7980026241A2E1A000B036C /* 로봇_조종하기_2169.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
