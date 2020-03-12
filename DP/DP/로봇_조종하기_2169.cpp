@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <cstring>
-#include <algorithm>
 
 #define endl "\n"
 using namespace std;
@@ -19,24 +18,25 @@ int dp[1000][1000][3];
 bool check[1000][1000];
 int dx[]={0, 1, 0};
 int dy[]={1, 0, -1};
-int INF=-987654321;
 
-int go(int x, int y, int dirct){
-    if(dp[x][y][dirct]!=INF) return dp[x][y][dirct];
-    if(x==n-1 && y==m-1) return a[x][y];
+void go(int x, int y, int sum, int dirct){
+    if(dp[x][y][dirct]!=-1 && sum < dp[x][y][dirct]) return;
+    dp[x][y][dirct]=sum;
+    if(x==n-1 && y==m-1)
+        return;
     
-    check[x][y]=true;
-    int sum=INF;
     for(int i=0; i<3; i++){
         int nx = x+dx[i];
         int ny = y+dy[i];
         if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
         if(check[nx][ny]) continue;
-        sum = max(sum, go(nx,ny,i)); // 이부분
+        check[nx][ny]=true;
+        int nsum = sum+a[nx][ny];
+        go(nx,ny,nsum,i);
+        check[nx][ny]=false;
     }
-    check[x][y]=false;
-    dp[x][y][dirct] = a[x][y] + sum;
-    return dp[x][y][dirct];
+    
+    return;
 }
 
 
@@ -45,18 +45,21 @@ int main(){
     cin.tie(NULL);
     cout.tie(NULL);
     
+    memset(dp, -1, sizeof(dp));
+    
     cin >> n >> m;
-    for(int i=0; i<n; i++){
-        for(int j=0; j<m; j++){
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++)
             cin >> a[i][j];
-            dp[i][j][0]=INF;
-            dp[i][j][1]=INF;
-            dp[i][j][2]=INF;
-        }
-    }
     
     check[0][0]=true;
-    cout << go(0, 0, 0);
+    go(0, 0, a[0][0], 0);
+    
+    int max=0;
+    for(int i=0; i<3; i++)
+        if(max < dp[n-1][m-1][i]) max = dp[n-1][m-1][i];
+    
+    cout << max;
     
     return 0;
 }
