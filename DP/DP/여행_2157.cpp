@@ -7,38 +7,44 @@
 //
 
 #include <iostream>
-#include <vector>
-#include <tuple>
-#include <algorithm>
 #include <cstring>
 
 #define endl "\n"
 using namespace std;
 
-int dp[301][301];
-int n,m,k;
-vector<pair<int,int>> v[301];
-int ans;
+//이틀동안 푼 문제.
+//첫 번째 틀린 이유 : 같은 경로 즉, 1 3 5, 1 3 8, 1에서 3도시를 갈때 기내식 점수가 5, 8이면 8만 저장하게 바꿨다. 처음에 벡터를 사용해서 경로와 기내식 점수를 저장했는데 이 부분 때문에 벡터는 사용할 수 없었다. 이 부분이 없다면 1 3 5, 1 3 8 이 있을 때 1 3 8은 dp에 이미 dp[2][3]이 저장되어있어 8값을 사용할 수가 없다.
+//두 번째 틀린 이유 : dp[cnt][now] 배열을 cnt개의 도시를 방문했을 때 현재 now도시에 있는 형태로 배열을 사용하였는데 기저 사례에서 조건에 맞지 않는 경우, dp에 0을 넣고 반환하고, 조건이 성립한 경우 dp에 해당 경로의 기내식 점수를 저장했는데 가령 n=5이고 m이 3일 때, dp[3][5]는 사실 3번째로 방문한도시가 5일경우 받을 수 있는 기내식 점수의 최대를 저장해야하는데 이미 끝 부분에 도달했으므로 0을 저장해야한다. 기내식 점수가 순서대로 1 2 3이라면 1 2 3 0 순서로 dp에 저장해야하는데 0 1 2 3 으로 저장했다. 아마 이 부분에서 한 테스트 케이스가 오류를 발생시킨 것 같다. 그래서 이 부분을 고치기 위해 조건이 맞으면 0을 반환하고 조건이 맞지 않을 때는 -INF를 반환해서 반환받을 때 음의 무한대 값을 받으면 num값을 갱신시키지 못하게 하였다.
+//세 번째 틀린 이유 : 기저 사례에서 조건이 맞지 않을 때 if(cnt>m)을 썼었는데 이 때 cnt가 n이고 방문 도시가 n에 도달하지 못한 경우에 참으로 판단하게 된다. 그래서 if(cnt==m && now != n)으로 바꿔줘야 했다.
 
-int go(int pre, int now, int sum, int cnt){
-    if(cnt>m){
-        dp[cnt][now]=0;
+int dp[301][301];
+int d[301][301];
+int n,m,k;
+int ans;
+int INF = 987654321;
+
+int go(int now, int cnt){
+    //기저 사례 : 입력된 문제가 더 이상 줄일 수 없을 만큼 작을 때.
+    if(cnt==m && now != n){
+        dp[cnt][now]=-INF;//음의 무한대 값을 저장하고 반환.
         return dp[cnt][now];
     }
-    if(cnt<=m && now==n){
-        dp[cnt][now]=sum;
+    //조건 성립.
+    if(now==n){
+        dp[cnt][now]=0;//0을 반환. 이미 끝에 도달했으므로 받을 수 있는 기내식 점수의 최댓값은 0임.
         return dp[cnt][now];
     }
     
     if(dp[cnt][now]!=-1) return dp[cnt][now];
     int num=0;
-    for(int i=0; i<v[now].size(); i++){
-        int next, score;
-        tie(next, score) = v[now][i];
-        int nscore = go(now, next, score, cnt+1);
-        if(nscore > num) num = nscore+sum;
+    
+    for(int i=now+1; i<=n; i++){
+        if(!d[now][i]) continue;
+        int nscore = go(i, cnt+1);
+        if(nscore+d[now][i] > num) num = nscore+d[now][i];//nscore가 조건이 성립한 경우 끝지점에서는 0, 그 다음 반환 때는 양의 정수가 반환되므로 num과 비교해서 num값을 갱신시킨다.
     }
-    dp[cnt][now]=num;
+    if(num>0) dp[cnt][now]=num;
+    else dp[cnt][now]=0;//조건 성립한 경로가 없다는 뜻.
     
     return dp[cnt][now];
 }
@@ -55,10 +61,75 @@ int main(){
     for(int i=0; i<k; i++){
         int x,y,score;
         cin >> x >> y >> score;
-        if(x<y)
-            v[x].push_back(make_pair(y,score));
+        if(x<y && d[x][y] < score) d[x][y]=score;//가장 큰 기내식 점수로 갱신 시켜야 함. 1 3 5 -> 1 3 8.
     }
-    cout << go(0,1,0,1);
+    cout << go(1,1);
     
     return 0;
 }
+
+//4 3 7
+//1 2 100
+//1 3 1
+//3 4 2
+//1 3 3
+//1 3 4
+//2 3 4
+//3 4 6
+
+//4 3 7
+//1 2 100
+//1 3 1
+//3 4 2
+//1 4 3
+//1 2 4
+//2 3 4
+//3 4 6
+
+//3 2 2
+//1 2 100
+//1 3 1
+//2 3 10
+
+//4 3 4
+//1 2 100
+//2 3 100
+//1 3 2
+//3 4 3
+
+//5 4 7
+//1 2 90
+//2 4 10
+//4 5 20
+//1 3 100
+//3 5 50
+//2 3 4
+//3 4 6
+
+//5 2 11
+//1 2 200
+//2 4 10
+//4 5 20
+//1 3 100
+//3 5 50
+//2 3 4
+//3 4 6
+//1 4 30
+//2 5 10
+//3 5 20
+//4 5 30
+
+//5 3 11
+//1 2 200
+//2 4 10
+//4 5 20
+//1 3 100
+//3 5 50
+//2 3 4
+//3 4 6
+//1 4 30
+//2 5 10
+//3 5 20
+//4 5 30
+//
+//
