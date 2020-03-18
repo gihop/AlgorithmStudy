@@ -13,27 +13,23 @@
 #define endl "\n"
 using namespace std;
 
-int a[50000];
-int dp[50000][4];
+int a[50001];
+int dp[50001][3];
 int n, m;
 int ans;
 
-int go(int idx, int train, int cnt){
-    if((cnt==m && train==3) || (idx==n)){
+int go(int idx, int train){
+    if(train==3 || idx>=n){
         return 0;
     }
-    int num=0, tmp=0;
+    int &sum = dp[idx][train];
+    if(sum != -1) return sum;
+    sum=0;
     
-    if(cnt==m)
-        tmp = go(idx+1, train+1, 1);
-    else
-        tmp = go(idx+1, train, cnt+1);
-    if(tmp > num) num = tmp;
-    tmp = go(idx+1, 0, 1);
+    if(idx + m-1 <= n)
+        sum = max(go(idx+1, train), (a[idx+m-1]-a[idx-1]) + go(idx+m, train+1));
     
-    if(tmp > num) num = tmp;
-    
-    return dp[idx][train];
+    return sum;
 }
 
 int main(){
@@ -43,13 +39,17 @@ int main(){
     
     cin >> n;
     
-    for(int i=0; i<n; i++){
-        cin >> a[i];
+    for(int i=1; i<=n; i++){
+        int tmp;
+        cin >> tmp;
+        a[i] = a[i-1]+tmp;
     }
     
     cin >> m;
     
+    memset(dp, -1, sizeof(dp));
     
+    cout << go(1,0) << endl;
     
     return 0;
 }
