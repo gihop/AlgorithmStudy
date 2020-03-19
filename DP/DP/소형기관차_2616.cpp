@@ -13,21 +13,22 @@
 #define endl "\n"
 using namespace std;
 
+//꼭 다시 풀어봐야하는 문제.
+
 int a[50001];
 int dp[50001][3];
 int n, m;
 int ans;
 
 int go(int idx, int train){
-    if(train==3 || idx>=n){
-        return 0;
-    }
+    if(train==3 || idx>=n) return 0; //기저 사례: train은 0,1,2 번호 밖에 없다. idx도 n보다 커지면 끝까지 간 것을 의미한다.
+    
     int &sum = dp[idx][train];
     if(sum != -1) return sum;
     sum=0;
     
-    if(idx + m-1 <= n)
-        sum = max(go(idx+1, train), (a[idx+m-1]-a[idx-1]) + go(idx+m, train+1));
+    if(idx + m-1 <= n)//열차 번호 idx를 포함해서 m개의 열차를 끌고 갈 수 있는 경우.
+        sum = max(go(idx+1, train), (a[idx+m-1]-a[idx-1]) + go(idx+m, train+1));//현재 열차를 끌고 가지 않는 경우(go(idx+1, train))과 현재 열차를 포함한 m개의 열차를 끌고 갔을 경우에서 크기를 비교한다.
     
     return sum;
 }
