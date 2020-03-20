@@ -211,5 +211,53 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
+            timestampString = "606641234.6006809"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
+            timestampString = "606641234.601052"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "go(int idx, int sum)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
+            timestampString = "606641234.601284"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "go(int idx, int sum)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
