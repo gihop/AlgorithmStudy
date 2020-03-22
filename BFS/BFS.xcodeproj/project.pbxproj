@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7A2C13C240141F500A48CD6 /* DSLR_9019.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A2C13B240141F500A48CD6 /* DSLR_9019.cpp */; };
+		F7A469832428DC4E004EBFEB /* 모래성_10711.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A469822428DC4E004EBFEB /* 모래성_10711.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +63,7 @@
 		F7A2C13724010CDC00A48CD6 /* 환승_5214.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "환승_5214.cpp"; sourceTree = "<group>"; };
 		F7A2C1392401161500A48CD6 /* 배열에서_이동_1981.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "배열에서_이동_1981.cpp"; sourceTree = "<group>"; };
 		F7A2C13B240141F500A48CD6 /* DSLR_9019.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DSLR_9019.cpp; sourceTree = "<group>"; };
+		F7A469822428DC4E004EBFEB /* 모래성_10711.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "모래성_10711.cpp"; sourceTree = "<group>"; };
 		F7A6B38123F935CA008B20C3 /* 로봇_청소기_4991.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇_청소기_4991.cpp"; sourceTree = "<group>"; };
 		F7A6B38323F956F7008B20C3 /* 거의_최단_경로_5719.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "거의_최단_경로_5719.cpp"; sourceTree = "<group>"; };
 		F7A6B38523FC07B7008B20C3 /* 최단경로_1753.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "최단경로_1753.cpp"; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 				F7A2C13724010CDC00A48CD6 /* 환승_5214.cpp */,
 				F7A2C1392401161500A48CD6 /* 배열에서_이동_1981.cpp */,
 				F7A2C13B240141F500A48CD6 /* DSLR_9019.cpp */,
+				F7A469822428DC4E004EBFEB /* 모래성_10711.cpp */,
 			);
 			path = BFS;
 			sourceTree = "<group>";
@@ -206,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A2C13C240141F500A48CD6 /* DSLR_9019.cpp in Sources */,
+				F7A469832428DC4E004EBFEB /* 모래성_10711.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
