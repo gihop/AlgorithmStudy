@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7A46985242F1B84004EBFEB /* 산업_스파이의_편지_3671.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A46984242F1B84004EBFEB /* 산업_스파이의_편지_3671.cpp */; };
+		F7AEA9D02449D5A4003437D9 /* 격자판의_숫자_이어_붙이기_2819_SWEA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7AEA9CF2449D5A4003437D9 /* 격자판의_숫자_이어_붙이기_2819_SWEA.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +39,7 @@
 		F793D4A223BA2E080046FEEC /* 연구소_14502.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "연구소_14502.cpp"; sourceTree = "<group>"; };
 		F793D4A423BCB1BD0046FEEC /* 감시_15683.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "감시_15683.cpp"; sourceTree = "<group>"; };
 		F7A46984242F1B84004EBFEB /* 산업_스파이의_편지_3671.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "산업_스파이의_편지_3671.cpp"; sourceTree = "<group>"; };
+		F7AEA9CF2449D5A4003437D9 /* 격자판의_숫자_이어_붙이기_2819_SWEA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "격자판의_숫자_이어_붙이기_2819_SWEA.cpp"; sourceTree = "<group>"; };
 		F7D4CD0A2386CDE70099BFFD /* 링크와_스타트_15661.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "링크와_스타트_15661.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +89,7 @@
 				F785303D23D5EBDA006744AE /* 에너지_모으기_16198.cpp */,
 				F785307B23E16F92006744AE /* 2048(Easy)_12100.cpp */,
 				F7A46984242F1B84004EBFEB /* 산업_스파이의_편지_3671.cpp */,
+				F7AEA9CF2449D5A4003437D9 /* 격자판의_숫자_이어_붙이기_2819_SWEA.cpp */,
 			);
 			path = "브루트포스";
 			sourceTree = "<group>";
@@ -148,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A46985242F1B84004EBFEB /* 산업_스파이의_편지_3671.cpp in Sources */,
+				F7AEA9D02449D5A4003437D9 /* 격자판의_숫자_이어_붙이기_2819_SWEA.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
