@@ -16,6 +16,7 @@
 		F75D33F424AA0C0E000D9BC0 /* 가장_큰_수.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D33F324AA0C0E000D9BC0 /* 가장_큰_수.cpp */; };
 		F75D33F624AA0C8E000D9BC0 /* H-Index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D33F524AA0C8E000D9BC0 /* H-Index.cpp */; };
 		F75D33F824AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D33F724AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp */; };
+		F75D33FA24AA0D65000D9BC0 /* 전화번호_목록.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D33F924AA0D65000D9BC0 /* 전화번호_목록.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		F75D33F324AA0C0E000D9BC0 /* 가장_큰_수.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "가장_큰_수.cpp"; sourceTree = "<group>"; };
 		F75D33F524AA0C8E000D9BC0 /* H-Index.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "H-Index.cpp"; sourceTree = "<group>"; };
 		F75D33F724AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "완주하지_못한_선수.cpp"; sourceTree = "<group>"; };
+		F75D33F924AA0D65000D9BC0 /* 전화번호_목록.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "전화번호_목록.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				F75D33F324AA0C0E000D9BC0 /* 가장_큰_수.cpp */,
 				F75D33F524AA0C8E000D9BC0 /* H-Index.cpp */,
 				F75D33F724AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp */,
+				F75D33F924AA0D65000D9BC0 /* 전화번호_목록.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				F75D33F824AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp in Sources */,
 				F75D33E324AA06FB000D9BC0 /* 타겟_넘버.cpp in Sources */,
 				F75D33F024AA0B65000D9BC0 /* 소수_찾기.cpp in Sources */,
+				F75D33FA24AA0D65000D9BC0 /* 전화번호_목록.cpp in Sources */,
 				F75D33F424AA0C0E000D9BC0 /* 가장_큰_수.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
