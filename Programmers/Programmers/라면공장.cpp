@@ -16,7 +16,7 @@ int solution(int stock, vector<int> dates, vector<int> supplies, int k) {
             j++;
         }
         if(!stock){
-            stock+=pq.top();ㅎ
+            stock+=pq.top();
             pq.pop();
             answer++;
         }
