@@ -33,6 +33,7 @@
 		F75D341624AA145D000D9BC0 /* 오픈채팅방.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D341524AA145D000D9BC0 /* 오픈채팅방.cpp */; };
 		F75D341824AA14A8000D9BC0 /* 실패율.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D341724AA14A8000D9BC0 /* 실패율.cpp */; };
 		F75D341A24AA150F000D9BC0 /* 무지의_먹방_라이브.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D341924AA150F000D9BC0 /* 무지의_먹방_라이브.cpp */; };
+		F75D341C24AA159E000D9BC0 /* 블록게임.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75D341B24AA159E000D9BC0 /* 블록게임.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		F75D341524AA145D000D9BC0 /* 오픈채팅방.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "오픈채팅방.cpp"; sourceTree = "<group>"; };
 		F75D341724AA14A8000D9BC0 /* 실패율.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "실패율.cpp"; sourceTree = "<group>"; };
 		F75D341924AA150F000D9BC0 /* 무지의_먹방_라이브.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "무지의_먹방_라이브.cpp"; sourceTree = "<group>"; };
+		F75D341B24AA159E000D9BC0 /* 블록게임.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "블록게임.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				F75D341524AA145D000D9BC0 /* 오픈채팅방.cpp */,
 				F75D341724AA14A8000D9BC0 /* 실패율.cpp */,
 				F75D341924AA150F000D9BC0 /* 무지의_먹방_라이브.cpp */,
+				F75D341B24AA159E000D9BC0 /* 블록게임.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				F75D340A24AA121C000D9BC0 /* 디스크_컨트롤러.cpp in Sources */,
 				F75D340C24AA1282000D9BC0 /* 문자열_압축.cpp in Sources */,
 				F75D340824AA11CA000D9BC0 /* 라면공장.cpp in Sources */,
+				F75D341C24AA159E000D9BC0 /* 블록게임.cpp in Sources */,
 				F75D33EE24AA0AB3000D9BC0 /* 모의고사.cpp in Sources */,
 				F75D33F824AA0CFF000D9BC0 /* 완주하지_못한_선수.cpp in Sources */,
 				F75D33E324AA06FB000D9BC0 /* 타겟_넘버.cpp in Sources */,
