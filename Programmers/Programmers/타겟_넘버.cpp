@@ -1,15 +1,19 @@
-//
-//  main.cpp
-//  Programmers
-//
-//  Created by jiho park on 2020/06/29.
-//  Copyright © 2020 jiho park. All rights reserved.
-//
-
+#include<string>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+bool solution(string s)
+{
+    bool answer = false;
+    
+    int count=0;
+    for(int i=0; i<s.size(); i++){
+        if(s[i]==')' && count>0) count--;
+        else if(s[i]=='(') count++;
+        else return false;
+    }
+    
+    if(count==0) answer=true;
+    return answer;
 }
