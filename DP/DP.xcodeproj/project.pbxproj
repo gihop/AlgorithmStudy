@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F7E065EA24B60FF200A49594 /* LCS_9251.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7E065E924B60FF200A49594 /* LCS_9251.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F79AA483240E777300865CAE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -36,6 +40,7 @@
 		F79AA485240E777300865CAE /* DP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79AA48F240E778B00865CAE /* 퇴사2_15486.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "퇴사2_15486.cpp"; sourceTree = "<group>"; };
 		F7A4697E242893EF004EBFEB /* 선발_명단_3980.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "선발_명단_3980.cpp"; sourceTree = "<group>"; };
+		F7E065E924B60FF200A49594 /* LCS_9251.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LCS_9251.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 				F7980027241CD75B000B036C /* 여행_2157.cpp */,
 				F7980029242259B4000B036C /* 소형기관차_2616.cpp */,
 				F7A4697E242893EF004EBFEB /* 선발_명단_3980.cpp */,
+				F7E065E924B60FF200A49594 /* LCS_9251.cpp */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E065EA24B60FF200A49594 /* LCS_9251.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
