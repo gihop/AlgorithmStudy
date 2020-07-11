@@ -16,7 +16,7 @@
 
 using namespace std;
 
-int dp[1001][1001];
+int dp[1001][1001];//dp[n][m]은 문자열 a의 n, 문자열 b의 m개의 문자에서 최장공통수열의 값을
 
 int bigger(int a, int b) { if(a>b) return a; return b; }
 
