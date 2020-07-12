@@ -159,8 +159,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "go(int x, int y)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
-            timestampString = "606641234.6006809"
+            timestampString = "616229301.0473109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
-            timestampString = "606641234.601052"
+            timestampString = "616229301.047413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -250,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1109;&#x1165;&#x11ab;&#x1107;&#x1161;&#x11af;_&#x1106;&#x1167;&#x11bc;&#x1103;&#x1161;&#x11ab;_3980.cpp"
-            timestampString = "606641234.601284"
+            timestampString = "616229301.047487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/1&#x1112;&#x1161;&#x11a8;&#x1102;&#x1167;&#x11ab;_5557.cpp"
-            timestampString = "616147562.078159"
+            timestampString = "616229301.0476331"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -314,11 +314,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/1&#x1112;&#x1161;&#x11a8;&#x1102;&#x1167;&#x11ab;_5557.cpp"
-            timestampString = "616147562.078261"
+            timestampString = "616229301.047718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x1102;&#x1162;&#x1105;&#x1167;&#x1100;&#x1161;&#x1100;&#x1175;_2096.cpp"
+            timestampString = "616229301.047801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x1102;&#x1162;&#x1105;&#x1167;&#x1100;&#x1161;&#x1100;&#x1175;_2096.cpp"
+            timestampString = "616229301.048386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
