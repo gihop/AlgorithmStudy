@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/N-Rook_II_1767.cpp"
-            timestampString = "605956417.349362"
+            timestampString = "616319665.4204921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/1&#x1112;&#x1161;&#x11a8;&#x1102;&#x1167;&#x11ab;_5557.cpp"
-            timestampString = "616231224.538476"
+            timestampString = "616319665.421044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -314,7 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/1&#x1112;&#x1161;&#x11a8;&#x1102;&#x1167;&#x11ab;_5557.cpp"
-            timestampString = "616231224.53855"
+            timestampString = "616319665.421188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1102;&#x1162;&#x1105;&#x1167;&#x1100;&#x1161;&#x1100;&#x1175;_2096.cpp"
-            timestampString = "616231224.53862"
+            timestampString = "616319665.421294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -346,11 +346,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DP/&#x1102;&#x1162;&#x1105;&#x1167;&#x1100;&#x1161;&#x1100;&#x1175;_2096.cpp"
-            timestampString = "616231224.539096"
+            timestampString = "616319665.4214031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x110c;&#x116e;&#x11af;&#x1109;&#x1166;&#x110b;&#x116e;&#x1100;&#x1175;.cpp"
+            timestampString = "616319665.4214931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DP/&#x110c;&#x116e;&#x11af;&#x1109;&#x1166;&#x110b;&#x116e;&#x1100;&#x1175;.cpp"
+            timestampString = "616319665.422078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
