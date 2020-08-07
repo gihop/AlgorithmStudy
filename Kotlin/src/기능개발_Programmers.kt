@@ -6,6 +6,7 @@ fun main(progresses: IntArray, speeds: IntArray): IntArray {
 
     for (i in 0 until progresses.size) {
         days[i] = ((100 - progresses[i]) / speeds[i])
+        if((100 - progresses[i])%speeds[i] != 0) days[i] += 1
     }
 
     var max = days[0]
