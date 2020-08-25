@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F732020424F54A450022EB01 /* 2xN_타일링.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F732020324F54A450022EB01 /* 2xN_타일링.cpp */; };
+		F732020624F54EB80022EB01 /* N으로_표현.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F732020524F54EB80022EB01 /* N으로_표현.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		F732020324F54A450022EB01 /* 2xN_타일링.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "2xN_타일링.cpp"; sourceTree = "<group>"; };
+		F732020524F54EB80022EB01 /* N으로_표현.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N으로_표현.cpp"; sourceTree = "<group>"; };
 		F75D33DF24AA06FB000D9BC0 /* Programmers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programmers; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75D33E224AA06FB000D9BC0 /* 타겟_넘버.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "타겟_넘버.cpp"; sourceTree = "<group>"; };
 		F75D33E924AA08AE000D9BC0 /* 네트워크.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "네트워크.cpp"; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 				F7E065E524B369A800A49594 /* 다음_큰_숫자.cpp */,
 				F7E065E724B5B6C800A49594 /* 카펫.cpp */,
 				F732020324F54A450022EB01 /* 2xN_타일링.cpp */,
+				F732020524F54EB80022EB01 /* N으로_표현.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -200,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F732020424F54A450022EB01 /* 2xN_타일링.cpp in Sources */,
+				F732020624F54EB80022EB01 /* N으로_표현.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
