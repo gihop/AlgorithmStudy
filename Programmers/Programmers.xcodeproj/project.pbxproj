@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F763E54824FCFA4D0010C8AE /* 다트_게임.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F763E54724FCFA4D0010C8AE /* 다트_게임.cpp */; };
 		F7EE4DBD24FA1AAE00F0352B /* 큰_수_만들기.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DBC24FA1AAE00F0352B /* 큰_수_만들기.cpp */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		F75D342F24AF3233000D9BC0 /* 124_나라의_숫자.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "124_나라의_숫자.cpp"; sourceTree = "<group>"; };
 		F75D343124AF4A7D000D9BC0 /* 카카오프렌즈_컬러링북.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "카카오프렌즈_컬러링북.cpp"; sourceTree = "<group>"; };
 		F75D343324AF6CA8000D9BC0 /* 스킬트리.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "스킬트리.cpp"; sourceTree = "<group>"; };
+		F763E54724FCFA4D0010C8AE /* 다트_게임.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "다트_게임.cpp"; sourceTree = "<group>"; };
 		F7E065E324B02F8100A49594 /* 올바른_괄호.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "올바른_괄호.cpp"; sourceTree = "<group>"; };
 		F7E065E524B369A800A49594 /* 다음_큰_숫자.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "다음_큰_숫자.cpp"; sourceTree = "<group>"; };
 		F7E065E724B5B6C800A49594 /* 카펫.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "카펫.cpp"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				F7EE4DB424F90BE200F0352B /* 순위.cpp */,
 				F7EE4DB624F93B3200F0352B /* 이중순위우선큐.cpp */,
 				F7EE4DBC24FA1AAE00F0352B /* 큰_수_만들기.cpp */,
+				F763E54724FCFA4D0010C8AE /* 다트_게임.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F763E54824FCFA4D0010C8AE /* 다트_게임.cpp in Sources */,
 				F7EE4DBD24FA1AAE00F0352B /* 큰_수_만들기.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
