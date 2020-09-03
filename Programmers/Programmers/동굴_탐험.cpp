@@ -15,6 +15,10 @@ using namespace std;
 //개선 사항이 떠오르지 않는다....
 //개선 사항을 알아내면 다시 고쳐보겠다.
 
+//추가+
+//정확도 1개 틀린 이유를 찾았다.
+//0번방을 가기 위해 들려야하는 조건이 있다면 탐색이 불가능하다.
+
 vector<vector<int>> graph;
 set<int> visited;//한 번이라도 방문했던 방을 저장한다.
 map<int,int> orderMap;
@@ -63,8 +67,10 @@ bool solution(int n, vector<vector<int>> path, vector<vector<int>> order) {
     graph.resize(n);
     
     //key방으로 가기 위해 먼저 가야하는 value방을 저장한다.
-    for(int i=0; i<order.size(); i++)
+    for(int i=0; i<order.size(); i++){
         orderMap[order[i][1]] = order[i][0];
+        if(order[i][1] == 0) return false;//0번방이 출발지점이기 때문에 0으로 가기 전에 가야할 방이 있다면 탐색이 불가능하다.
+    }
     
     //그래프 문제의 필수 자료구조.
     for(int i=0; i<path.size(); i++){
