@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F76B28C62504CA3F0071EA83 /* 구명보트.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F76B28C52504CA3F0071EA83 /* 구명보트.cpp */; };
 		F783C3C9250260E000C09EB9 /* 외벽_점검.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F783C3C8250260E000C09EB9 /* 외벽_점검.cpp */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F763E54D24FD5F580010C8AE /* 프렌즈4블록.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "프렌즈4블록.cpp"; sourceTree = "<group>"; };
 		F763E54F24FE35FF0010C8AE /* 뉴스_클러스터링.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "뉴스_클러스터링.cpp"; sourceTree = "<group>"; };
 		F763E55124FE913F0010C8AE /* 키패드_누르기.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "키패드_누르기.cpp"; sourceTree = "<group>"; };
+		F76B28C52504CA3F0071EA83 /* 구명보트.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "구명보트.cpp"; sourceTree = "<group>"; };
 		F783C3C6250249E300C09EB9 /* 기둥과_보_설치.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "기둥과_보_설치.cpp"; sourceTree = "<group>"; };
 		F783C3C8250260E000C09EB9 /* 외벽_점검.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "외벽_점검.cpp"; sourceTree = "<group>"; };
 		F7B693FF24FFBB5F00486687 /* 수식_최대화.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "수식_최대화.cpp"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F7B694052500EAAA00486687 /* 동굴_탐험.cpp */,
 				F783C3C6250249E300C09EB9 /* 기둥과_보_설치.cpp */,
 				F783C3C8250260E000C09EB9 /* 외벽_점검.cpp */,
+				F76B28C52504CA3F0071EA83 /* 구명보트.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76B28C62504CA3F0071EA83 /* 구명보트.cpp in Sources */,
 				F783C3C9250260E000C09EB9 /* 외벽_점검.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
