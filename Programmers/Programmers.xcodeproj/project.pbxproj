@@ -11,6 +11,7 @@
 		F76B28C8250510420071EA83 /* 섬_연결하기.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F76B28C7250510420071EA83 /* 섬_연결하기.cpp */; };
 		F76B28CA25054A1F0071EA83 /* 단속카메라.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F76B28C925054A1F0071EA83 /* 단속카메라.cpp */; };
 		F783C3C9250260E000C09EB9 /* 외벽_점검.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F783C3C8250260E000C09EB9 /* 외벽_점검.cpp */; };
+		F7B32ED92506A04F008305A6 /* 입국심사.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7B32ED82506A04F008305A6 /* 입국심사.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,7 @@
 		F76B28C925054A1F0071EA83 /* 단속카메라.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "단속카메라.cpp"; sourceTree = "<group>"; };
 		F783C3C6250249E300C09EB9 /* 기둥과_보_설치.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "기둥과_보_설치.cpp"; sourceTree = "<group>"; };
 		F783C3C8250260E000C09EB9 /* 외벽_점검.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "외벽_점검.cpp"; sourceTree = "<group>"; };
+		F7B32ED82506A04F008305A6 /* 입국심사.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "입국심사.cpp"; sourceTree = "<group>"; };
 		F7B693FF24FFBB5F00486687 /* 수식_최대화.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "수식_최대화.cpp"; sourceTree = "<group>"; };
 		F7B694012500C48700486687 /* 보석_쇼핑.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "보석_쇼핑.cpp"; sourceTree = "<group>"; };
 		F7B694032500CCCC00486687 /* 경주로_건설.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "경주로_건설.cpp"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				F76B28C52504CA3F0071EA83 /* 구명보트.cpp */,
 				F76B28C7250510420071EA83 /* 섬_연결하기.cpp */,
 				F76B28C925054A1F0071EA83 /* 단속카메라.cpp */,
+				F7B32ED82506A04F008305A6 /* 입국심사.cpp */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76B28CA25054A1F0071EA83 /* 단속카메라.cpp in Sources */,
+				F7B32ED92506A04F008305A6 /* 입국심사.cpp in Sources */,
 				F76B28C8250510420071EA83 /* 섬_연결하기.cpp in Sources */,
 				F76B28C62504CA3F0071EA83 /* 구명보트.cpp in Sources */,
 				F783C3C9250260E000C09EB9 /* 외벽_점검.cpp in Sources */,
