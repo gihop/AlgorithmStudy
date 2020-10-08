@@ -67,5 +67,117 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.449767"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.450315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.450704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.451077"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.45144"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.451807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWEA/&#x1112;&#x1167;&#x11a8;&#x110c;&#x1175;&#x11ab;&#x110b;&#x1175;&#x110b;&#x1174;_&#x1111;&#x1173;&#x1105;&#x1169;&#x1100;&#x1173;&#x1105;&#x1162;&#x11b7;_&#x1100;&#x1165;&#x11b7;&#x110c;&#x1173;&#x11bc;_1824.cpp"
+            timestampString = "623848462.4521739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
