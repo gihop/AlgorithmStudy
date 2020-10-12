@@ -11,6 +11,7 @@
 		F78BFC34253351A7008729D0 /* 모노미노도미노_19235.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F78BFC33253351A7008729D0 /* 모노미노도미노_19235.cpp */; };
 		F795EB032530692900483343 /* 청소년_상어_19236.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F795EB022530692900483343 /* 청소년_상어_19236.cpp */; };
 		F79E1E66252F5CA00049D733 /* 입국심사_3074.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F79E1E65252F5CA00049D733 /* 입국심사_3074.cpp */; };
+		F7A39C9F253454FE00F08B6D /* 인구_이동_16234.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A39C9E253454FE00F08B6D /* 인구_이동_16234.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		F79E1E61252F30240049D733 /* 보급로_1249.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "보급로_1249.cpp"; sourceTree = "<group>"; };
 		F79E1E63252F45E80049D733 /* 염라대왕의_이름_정렬_7701.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "염라대왕의_이름_정렬_7701.cpp"; sourceTree = "<group>"; };
 		F79E1E65252F5CA00049D733 /* 입국심사_3074.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "입국심사_3074.cpp"; sourceTree = "<group>"; };
+		F7A39C9E253454FE00F08B6D /* 인구_이동_16234.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "인구_이동_16234.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				F795EB022530692900483343 /* 청소년_상어_19236.cpp */,
 				F78BFC3125334E55008729D0 /* 스타트_택시_19238.cpp */,
 				F78BFC33253351A7008729D0 /* 모노미노도미노_19235.cpp */,
+				F7A39C9E253454FE00F08B6D /* 인구_이동_16234.cpp */,
 			);
 			path = SWEA;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A39C9F253454FE00F08B6D /* 인구_이동_16234.cpp in Sources */,
 				F79E1E66252F5CA00049D733 /* 입국심사_3074.cpp in Sources */,
 				F78BFC3225334E55008729D0 /* 스타트_택시_19238.cpp in Sources */,
 				F78BFC34253351A7008729D0 /* 모노미노도미노_19235.cpp in Sources */,
