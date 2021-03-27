@@ -1,9 +1,22 @@
-//
-//  위장.cpp
-//  Retry
-//
-//  Created by jiho park on 2021/04/18.
-//  Copyright © 2021 jiho park. All rights reserved.
-//
+#include <string>
+#include <vector>
+#include <map>
+#include <iostream>
 
-#include <stdio.h>
+using namespace std;
+
+int solution(vector<vector<string>> clothes) {
+    int answer = 1;
+    
+    map<string, int> m;
+    
+    for(int i=0; i<clothes.size(); i++){//그냥 이렇게 해도된다.
+        m[clothes[i][1]]++;
+    }
+    
+    for(map<string,int>::iterator iter=m.begin(); iter!=m.end(); iter++){
+        answer *= (iter->second+1);
+    }
+    
+    return answer-1;
+}
