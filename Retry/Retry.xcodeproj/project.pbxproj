@@ -11,6 +11,7 @@
 		F7A4A9B1263272B100311E9A /* 입국심사.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A4A9B0263272B100311E9A /* 입국심사.cpp */; };
 		F7A4A9B42632A47900311E9A /* 가장_먼_노드.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A4A9B32632A47900311E9A /* 가장_먼_노드.cpp */; };
 		F7A4A9B72632AC5E00311E9A /* 순위.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A4A9B62632AC5E00311E9A /* 순위.cpp */; };
+		F7A4A9BA2632E4C100311E9A /* 정수_삼각형.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A4A9B92632E4C100311E9A /* 정수_삼각형.cpp */; };
 		F7A6086F26317AC000419E1A /* 단어_변환.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A6086E26317AC000419E1A /* 단어_변환.cpp */; };
 		F7A60874263182D100419E1A /* 여행경로.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7A60873263182D100419E1A /* 여행경로.cpp */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		F7A4A9B0263272B100311E9A /* 입국심사.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "입국심사.cpp"; sourceTree = "<group>"; };
 		F7A4A9B32632A47900311E9A /* 가장_먼_노드.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "가장_먼_노드.cpp"; sourceTree = "<group>"; };
 		F7A4A9B62632AC5E00311E9A /* 순위.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "순위.cpp"; sourceTree = "<group>"; };
+		F7A4A9B92632E4C100311E9A /* 정수_삼각형.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "정수_삼각형.cpp"; sourceTree = "<group>"; };
 		F7A6086B2631791D00419E1A /* 네트워크.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "네트워크.cpp"; sourceTree = "<group>"; };
 		F7A6086E26317AC000419E1A /* 단어_변환.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "단어_변환.cpp"; sourceTree = "<group>"; };
 		F7A60873263182D100419E1A /* 여행경로.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "여행경로.cpp"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				F7A4A9B0263272B100311E9A /* 입국심사.cpp */,
 				F7A4A9B32632A47900311E9A /* 가장_먼_노드.cpp */,
 				F7A4A9B62632AC5E00311E9A /* 순위.cpp */,
+				F7A4A9B92632E4C100311E9A /* 정수_삼각형.cpp */,
 			);
 			path = Retry;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				F7A4A9AE26326D3900311E9A /* 청소년_상어_19236.cpp in Sources */,
 				F7A4A9B1263272B100311E9A /* 입국심사.cpp in Sources */,
 				F7A4A9B42632A47900311E9A /* 가장_먼_노드.cpp in Sources */,
+				F7A4A9BA2632E4C100311E9A /* 정수_삼각형.cpp in Sources */,
 				F7A60874263182D100419E1A /* 여행경로.cpp in Sources */,
 				F7A4A9B72632AC5E00311E9A /* 순위.cpp in Sources */,
 				F7A6086F26317AC000419E1A /* 단어_변환.cpp in Sources */,
